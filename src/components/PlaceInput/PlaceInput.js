@@ -41,6 +41,7 @@ class PlaceInput extends Component {
                 <TextInput
                     style={styles.textInput}
                     placeholder='An awesome place'
+                    placeholderTextColor='#ccc'
                     value={this.state.placeName}
                     onChangeText={this.placeNameChangedHandler}/>
                 <Button
@@ -57,10 +58,11 @@ const styles = StyleSheet.create({
         width: '100%',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     textInput: {
         width: '70%',
+        color: 'white',
         borderColor: "#ccc",
     },
     addButton: {

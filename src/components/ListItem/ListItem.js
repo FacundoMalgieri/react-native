@@ -9,8 +9,8 @@ import {Text, View, StyleSheet} from 'react-native';
  * @returns {*}
  * @constructor
  */
-const ListItem = (props) => (
-    <View style={styles.listItem}>
+const ListItem = props => (
+    <View style={styles.listItem} onPress={props.onItemPressed}>
         <Text>{props.placeName}</Text>
     </View>
 );
