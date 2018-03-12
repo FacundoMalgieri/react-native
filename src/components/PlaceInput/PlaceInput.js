@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Button, StyleSheet, TextInput, View} from 'react-native';
+import CustomButton from './../CustomButton/CustomButton'
 
 /**
  * The component to display an input field where the user can add new places to the array.
@@ -14,8 +15,7 @@ class PlaceInput extends Component {
     };
 
     /**
-     * Handler for the place input.
-     * Sets the state to the value entered by the user.
+     * Handler for the place input. Sets the state to the value entered by the user.
      *
      * @param val The value
      */
@@ -24,9 +24,8 @@ class PlaceInput extends Component {
     };
 
     /**
-     * Handler for the Add button.
-     * Validates if the input isn't empty.
-     * Sets the state keeping the previous one via immutability.
+     * Handler for the Add button. Validates if the input isn't empty.
+     * Sets the state keeping the previous one using immutability.
      */
     placeSubmitHandler = () => {
         if (this.state.placeName.trim() === '') {
@@ -44,10 +43,13 @@ class PlaceInput extends Component {
                     placeholderTextColor='#ccc'
                     value={this.state.placeName}
                     onChangeText={this.placeNameChangedHandler}/>
-                <Button
-                    styles={styles.addButton}
-                    title='Add'
-                    onPress={this.placeSubmitHandler}/>
+                <View style={styles.addButton}>
+                    <CustomButton
+                        buttonContainer={styles.buttonContainer}
+                        textStyle={styles.textStyle}
+                        title='ADD'
+                        onPress={this.placeSubmitHandler}/>
+                </View>
             </View>
         );
     }
@@ -66,7 +68,17 @@ const styles = StyleSheet.create({
         borderColor: "#ccc",
     },
     addButton: {
-        width: '30%',
+        marginRight:'10%',
+        marginLeft: '6%',
+        width: '12%'
+    },
+    buttonContainer: {
+        padding: 8,
+        borderRadius: 3,
+        backgroundColor: '#F3D826',
+    },
+    textStyle: {
+        fontWeight: 'bold'
     }
 });
 

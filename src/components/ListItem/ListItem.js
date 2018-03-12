@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
 
 /**
  * An item of a list that receives via props the name to display.
@@ -10,9 +10,11 @@ import {Text, View, StyleSheet} from 'react-native';
  * @constructor
  */
 const ListItem = props => (
-    <View style={styles.listItem} onPress={props.onItemPressed}>
-        <Text>{props.placeName}</Text>
-    </View>
+    <TouchableOpacity onPress={props.onItemPressed}>
+        <View style={styles.listItem}>
+            <Text>{props.placeName}</Text>
+        </View>
+    </TouchableOpacity>
 );
 
 const styles = StyleSheet.create({
