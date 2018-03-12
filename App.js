@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 import {StatusBar, StyleSheet, View} from 'react-native';
-import ListContainer from './src/components/ListContainer/ListContainer';
+import PlaceList from './src/components/PlaceList/PlaceList';
 import PlaceInput from './src/components/PlaceInput/PlaceInput';
+import PlaceDetail from './src/components/PlaceDetail/PlaceDetail';
 
 export default class App extends Component {
     state = {
-        places: []
+        places: [],
+        selectedPlace: null
     };
 
     /**
@@ -18,7 +20,8 @@ export default class App extends Component {
             return {
                 places: prevState.places.concat({
                     key: Math.random(),
-                    value: placeName
+                    name: placeName,
+                    image: {uri: 'https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb'}
                 })
             };
         });
@@ -29,10 +32,19 @@ export default class App extends Component {
      *
      * @param key
      */
-    placeDeletedHandler = key => {
+    placeSelectedHandler = key => {
+        this.setState(prevState => ({selectedPlace: prevState.places.find(place => place.key === key)}));
+    };
+
+    placeDeletedHandler = () => {
         this.setState(prevState => ({
-            places: prevState.places.filter((place, i) => (place.key !== key))
+            places: prevState.places.filter((place) => (place.key !== prevState.selectedPlace.key)),
+            selectedPlace: null
         }));
+    };
+
+    modalClosedHandler = () => {
+        this.setState({selectedPlace: null});
     };
 
     /**
@@ -45,10 +57,15 @@ export default class App extends Component {
             <View style={styles.container}>
                 <StatusBar
                     backgroundColor='#F3D826' color='black'
-                    barStyle="dark-content"
-                />
+                    barStyle="dark-content"/>
+                <PlaceDetail
+                    selectedPlace={this.state.selectedPlace}
+                    onItemDeleted={this.placeDeletedHandler}
+                    onModalClose={this.modalClosedHandler}/>
                 <PlaceInput onPlaceAdded={this.placeAddedHandler}/>
-                <ListContainer places={this.state.places} onItemDeleted={this.placeDeletedHandler}/>
+                <PlaceList
+                    places={this.state.places}
+                    onItemSelected={this.placeSelectedHandler}/>
             </View>
         );
     }

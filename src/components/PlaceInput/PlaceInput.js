@@ -68,9 +68,7 @@ const styles = StyleSheet.create({
         borderColor: "#ccc",
     },
     addButton: {
-        marginRight:'10%',
-        marginLeft: '6%',
-        width: '12%'
+        width: '20%'
     },
     buttonContainer: {
         padding: 8,
@@ -78,6 +76,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#F3D826',
     },
     textStyle: {
+        textAlign: 'center',
         fontWeight: 'bold'
     }
 });
