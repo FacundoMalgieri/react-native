@@ -12,7 +12,6 @@ const PlaceDetail = props => {
             </View>
         );
     }
-
     return (
         <Modal onRequestClose={props.onModalClose} visible={props.selectedPlace !== null} animationType='slide'>
             <View>
