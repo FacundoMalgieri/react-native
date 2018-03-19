@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Button, StyleSheet, TextInput, View} from 'react-native';
-import CustomButton from './../CustomButton/CustomButton'
 
 /**
  * The component to display an input field where the user can add new places to the array.
@@ -44,11 +43,7 @@ class PlaceInput extends Component {
                     value={this.state.placeName}
                     onChangeText={this.placeNameChangedHandler}/>
                 <View style={styles.addButton}>
-                    <CustomButton
-                        buttonContainer={styles.buttonContainer}
-                        textStyle={styles.textStyle}
-                        title='ADD'
-                        onPress={this.placeSubmitHandler}/>
+                    <Button title='ADD' onPress={this.placeSubmitHandler}/>
                 </View>
             </View>
         );
@@ -64,7 +59,6 @@ const styles = StyleSheet.create({
     },
     textInput: {
         width: '70%',
-        color: 'white',
         borderColor: "#ccc",
     },
     addButton: {
