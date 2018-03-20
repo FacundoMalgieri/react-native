@@ -1,10 +1,27 @@
 import React, {Component} from 'react';
-import {Button, Text, TextInput, View} from 'react-native';
-import PlaceInput from '../../components/PlaceInput/PlaceInput';
+import {Button, ScrollView, StyleSheet, View} from 'react-native';
 import {connect} from 'react-redux';
 import {addPlace} from '../../store/actions';
+import HeadingText from '../../components/UI/HeadingText/HeadingText';
+import MainText from '../../components/UI/MainText/MainText';
+import PlaceInput from '../../components/PlaceInput/PlaceInput';
+import PickImage from '../../components/PickImage/PickImage';
+import PickLocation from '../../components/PickLocation/PickLocation';
 
 class SharePlaceScreen extends Component {
+    static navigatorStyle = {
+        navBarButtonColor: '#F3D826',
+        navBarBackgroundColor: '#691f75',
+        navBarTextColor: 'white'
+    };
+
+    state = {
+        placeName: ''
+    };
+    placeNameChangedHandler = val => {
+        this.setState({placeName: val});
+    };
+
     constructor(props) {
         super(props);
         this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
@@ -19,25 +36,52 @@ class SharePlaceScreen extends Component {
         }
     };
 
-    placeAddedHandler = placeName => {
-        this.props.onAddPlace(placeName);
+    placeAddedHandler = () => {
+        if (this.state.placeName.trim() !== '')
+            this.props.onAddPlace(this.state.placeName);
     };
 
     render() {
         return (
-            <View>
-                <Text>Share a Place with us!</Text>
-                <View><Text>Image Preview!</Text></View>
-                <Button title='Pick Image'/>
-                <View><Text>Map</Text></View>
-                <Button title='Locate Me'/>
-                <TextInput placeholder='Place Name'/>
-                <Button title='Share the Place!'/>
-            </View>
+            <ScrollView>
+                <View style={styles.container}>
+                    <MainText>
+                        <HeadingText>Share a Place with us!</HeadingText>
+                    </MainText>
+                    <PickImage/>
+                    <PickLocation/>
+                    <PlaceInput
+                        placeName={this.state.placeName}
+                        onChangeText={this.placeNameChangedHandler}/>
+                    <View style={styles.button}>
+                        <Button title='Share the Place!' onPress={this.placeAddedHandler}/>
+                    </View>
+                </View>
+            </ScrollView>
         );
     }
 }
 
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        alignItems: 'center'
+    },
+    placeholder: {
+        borderWidth: 1,
+        borderColor: 'black',
+        backgroundColor: '#eee',
+        width: '80%',
+        height: 150
+    },
+    previewImage: {
+        width: '100%',
+        height: '100%'
+    },
+    button: {
+        margin: 8
+    }
+});
 
 const mapDispatchToProps = dispatch => {
     return {

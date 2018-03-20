@@ -12,7 +12,7 @@ import {Text, View, StyleSheet, TouchableOpacity, Image} from 'react-native';
 const ListItem = props => (
     <TouchableOpacity onPress={props.onItemPressed}>
         <View style={styles.listItem}>
-            <Image resizeMode='cover' source={props.placeImage} style={styles.placeImage}/>
+            <Image resizeMode='cover' source={props.placeImage} style={styles.previewImage}/>
             <Text>{props.placeName}</Text>
         </View>
     </TouchableOpacity>
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center'
     },
-    placeImage: {
+    previewImage: {
         width: 30,
         height: 30,
         marginRight: 10
