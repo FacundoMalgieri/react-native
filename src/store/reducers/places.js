@@ -12,8 +12,11 @@ const placesReducer = (state = initialState, action) => {
                 places: state.places.concat({
                     key: Math.random(),
                     name: action.placeName,
-                    image: {uri: 'https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb'}
-                })
+                    image: {
+                        uri: action.image.uri
+                    },
+                    location: action.location
+                }),
             };
         case DELETE_PLACE:
             return {
