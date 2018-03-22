@@ -55,6 +55,11 @@ class PickLocation extends Component {
     };
 
     render() {
+        let marker = null;
+        if (this.state.locationChosen) {
+            marker = <MapView.Marker coordinate={this.state.focusedLocation}/>
+        }
+
         return (
             <View style={styles.container}>
                 <MapView
@@ -62,7 +67,6 @@ class PickLocation extends Component {
                     style={styles.map}
                     onPress={this.pickLocationHandler}
                     ref={ref => this.map = ref}>
-                    <MapView.Marker coordinate={this.state.focusedLocation}/>
                 </MapView>
                 <View style={styles.button}>
                     <Button title='Locate Me' onPress={this.getLocationHandler}/>

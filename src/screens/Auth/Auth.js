@@ -38,7 +38,7 @@ class AuthScreen extends Component {
                 value: '',
                 valid: false,
                 validationRules: {
-                    minLength: 4,
+                    minLength: 6,
                     isPass: true
                 },
                 touched: false
@@ -134,6 +134,16 @@ class AuthScreen extends Component {
                 </MainText>
             );
         }
+        let submitButton = (
+            <CustomButton onPress={this.loginHandler}
+                          disabled={
+                              !this.state.controls.email.valid ||
+                              !this.state.controls.password.valid ||
+                              !this.state.controls.confirmPassword.valid &&
+                              this.state.authMode === 'signup'}>
+                Submit
+            </CustomButton>
+        );
 
         if (this.state.authMode === 'signup') {
             confirmPasswordControl = (
@@ -193,14 +203,7 @@ class AuthScreen extends Component {
                             </View>
                         </View>
                     </TouchableWithoutFeedback>
-                    <CustomButton onPress={this.loginHandler}
-                                  disabled={
-                                      !this.state.controls.email.valid ||
-                                      !this.state.controls.password.valid ||
-                                      !this.state.controls.confirmPassword.valid &&
-                                      this.state.authMode === 'signup'}>
-                        Submit
-                    </CustomButton>
+                    {submitButton}
                 </KeyboardAvoidingView>
             </ImageBackground>
         );

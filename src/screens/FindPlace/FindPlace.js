@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {StyleSheet, Text, TouchableOpacity, View, Animated} from 'react-native';
 import PlaceList from '../../components/PlaceList/PlaceList';
 import {connect} from 'react-redux';
+import {getPlaces} from '../../store/actions/index';
 
 class FindPlaceScreen extends Component {
     static navigatorStyle = {
@@ -21,26 +22,16 @@ class FindPlaceScreen extends Component {
         this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
     }
 
+    componentDidMount() {
+        this.props.onLoadPlaces();
+    }
+
     onNavigatorEvent = event => {
         if (event.type === 'NavBarButtonPress') {
-            if (event.id === 'sideDrawerToggle')
-                this.props.navigator.toggleDrawer({
-                    side: 'left'
-                });
+            if (event.id === 'sideDrawerToggle') {
+                this.props.navigator.toggleDrawer({side: 'left'});
+            }
         }
-    };
-
-    placesSearchHandler = () => {
-        Animated.timing(this.state.removeAnim, {
-            toValue: 0,
-            duration: 500,
-            userNativeDriver: true
-        }).start(() => {
-            this.setState({
-                placesLoaded: true
-            });
-            this.placesLoadedHandler(1);
-        });
     };
 
     placesLoadedHandler = () => {
@@ -49,6 +40,17 @@ class FindPlaceScreen extends Component {
             duration: 500,
             userNativeDriver: true
         }).start();
+    };
+
+    placesSearchHandler = () => {
+        Animated.timing(this.state.removeAnim, {
+            toValue: 0,
+            duration: 500,
+            userNativeDriver: true
+        }).start(() => {
+            this.setState({placesLoaded: true});
+            this.placesLoadedHandler();
+        });
     };
 
     itemSelectedHandler = key => {
@@ -124,4 +126,11 @@ const mapStateToProps = state => {
     }
 };
 
-export default connect(mapStateToProps)(FindPlaceScreen);
+const mapDispatchToProps = dispatch => {
+    return {
+        onLoadPlaces: () => dispatch(getPlaces())
+    }
+};
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(FindPlaceScreen);
