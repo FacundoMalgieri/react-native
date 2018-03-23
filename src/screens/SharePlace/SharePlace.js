@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {ActivityIndicator, Button, ScrollView, StyleSheet, Text, View} from 'react-native';
 import {connect} from 'react-redux';
-import {addPlace} from '../../store/actions';
+import {addPlace, startAddPlace} from '../../store/actions';
 import HeadingText from '../../components/UI/HeadingText/HeadingText';
 import MainText from '../../components/UI/MainText/MainText';
 import PlaceInput from '../../components/PlaceInput/PlaceInput';
@@ -40,6 +40,14 @@ class SharePlaceScreen extends Component {
         super(props);
         this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
     }
+
+    componentDidUpdate() {
+        if (this.props.placeAdded) {
+            this.props.navigator.switchToTab({tabIndex: 0});
+            this.props.onStartAddPlace();
+        }
+    };
+
 
     onNavigatorEvent = event => {
         if (event.type === 'NavBarButtonPress') {
@@ -169,13 +177,15 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = state => {
     return {
-        isLoading: state.ui.isLoading
+        isLoading: state.ui.isLoading,
+        placeAdded: state.places.placeAdded
     }
 };
 
 const mapDispatchToProps = dispatch => {
     return {
-        onAddPlace: (placeName, location, image) => dispatch(addPlace(placeName, location, image))
+        onAddPlace: (placeName, location, image) => dispatch(addPlace(placeName, location, image)),
+        onStartAddPlace: ()=> dispatch(startAddPlace())
     }
 };
 
