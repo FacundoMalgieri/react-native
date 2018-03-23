@@ -16,6 +16,7 @@ import CustomButton from '../../components/UI/CustomButton/CustomButton';
 import validate from '../../utility/validation';
 import {connect} from 'react-redux';
 import {tryAuth} from '../../store/actions/index';
+import {authAutoSignIn} from '../../store/actions';
 
 class AuthScreen extends Component {
     static navigatorStyle = {
@@ -60,8 +61,9 @@ class AuthScreen extends Component {
     }
 
     componentDidMount() {
-
+        this.props.onAutoSignIn();
     }
+
     componentWillUnmount() {
         Dimensions.removeEventListener('change', this.updateStyles);
     }
@@ -164,7 +166,7 @@ class AuthScreen extends Component {
             );
         }
         if (this.props.isLoading) {
-            submitButton = <ActivityIndicator/>
+            submitButton = <ActivityIndicator/>;
         }
         return (
             <ImageBackground
@@ -257,7 +259,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onTryAuth: (authData, authMode) => dispatch(tryAuth(authData, authMode))
+        onTryAuth: (authData, authMode) => dispatch(tryAuth(authData, authMode)),
+        onAutoSignIn: () => dispatch(authAutoSignIn())
     };
 };
 

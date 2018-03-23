@@ -1,0 +1,4 @@
+#Wed Mar 21 16:46:12 ART 2018
+base.0=C\:\\Users\\Facundo\\Desktop\\Workspace\\udemy-react-native\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=C\:\\Users\\Facundo\\Desktop\\Workspace\\udemy-react-native\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

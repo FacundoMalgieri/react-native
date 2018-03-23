@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.aurelhubert\ahbottomnavigation\2.0.6\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c8ba41bea7f78f8bdf3a803b9d08eb3fff416706">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.aurelhubert-ahbottomnavigation-2.0.6_0468b59e9f23ee4de7beda6cf0df3dee6bc76713.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-10.0.1_657cd1b8da9e55ce4b8e0a0e2fd19d389a1cc657.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_70a581fb181b9c60b95ffcd976c24f75cc71a450.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-base-1.3.0_2558226d2d9153a484e184875cd9b7e35752a2c5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.6.0\3f9b16b774f2c36cfd86dd2053d0b3059531dacc\okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.6.0_8e2a2120ffbb5c15c8b039ccf166eaf9173a4bed.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.3.1_ecd05e7ace45d2bdff50f952d6f061e3f31d6bbe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.3.1_e43810b36c9f01e32e71953172417d072a50d04e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\udemyreactnative\react-native-maps\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="634269d826283e4221210b70e7ebcb44b6e7d918">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\udemyreactnative-react-native-maps-unspecified_8c3d541d67f2d2afbc09fbb7570721cab0820757.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.balysv.materialmenu\material-menu-toolbar\1.5.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="55d7bf547c88cb7c8c7c5cdbf3b06dd66c9750f8">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.balysv.materialmenu-material-menu-toolbar-1.5.4_c6f135b585a73b457493355a23b77d347706d297.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-1.3.0_777628ad62e1bcdbda7245260fdf9124bad1d0db.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.3.1_8ebb802747e9a5c188631cb79bf3b656590adb98.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.android.support\design\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-design-25.3.1_1f4754d1f43804cb9753be3465fc3d45127ac00f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.soloader-soloader-0.1.0_b66f1bfceb44e58c4cb4e7b514570adb4e929d40.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.6.0\69edde9fc4b01c9fd51d25b83428837478c27254\okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\okhttp-3.6.0_eed13a45aa9e646f8631e59bc382dcfde2723dd5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-maps-10.0.1_012a4c76ef253301dc016cea1eb0a111fac95032.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-1.3.0_9dbb94ae6a0240992fe398a141eaf81c121f33cc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\udemyreactnative\react-native-navigation\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ea3694ab3e55f2bedb3737e2bdecfa462ce190ff">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\udemyreactnative-react-native-navigation-unspecified_54cbc041b2daa13d926dcdfdae758369b05ca768.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_44c9aa8b0dcb11e561af4841349a3cc75816e5ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.52.0\jars\libs\infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\infer-annotations-4.0_495bf01e68af1cdafb2f516a8bfa2ca483fdb855.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\.gradle\caches\modules-2\files-2.1\com.facebook.fbui.textlayoutbuilder\staticlayout-proxy\1.0\f162442a19fff13995fbd51ba414d9ee05579080\staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\staticlayout-proxy-1.0_77d3fcc071951bb73041ee2e893d492da3100b1d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-10.0.1_ea01d1c8923800eeb8dfa990fc43d9f0221cafdc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.3.1_1688e56ae0604e8ae6ce2db8a9a5613264bc0f91.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fbcore-1.3.0_1dc0bb8c26a50e775c66cf2308888c7560a6a9ab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\udemyreactnative\react-native-vector-icons\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="279750fed3c920d06351dbf32889c1b48203c7ad">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\udemyreactnative-react-native-vector-icons-unspecified_4325cf97d0f45756f22b747935befcb6dd566dcf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\library-2.4.0_57a5192acd9fc143886956552fb0af5dbab1ee55.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.3.1_fbd916b7d5eb2bd9a4e2bcc163077c13930b6dcb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-1.3.0_ab3c59fdebe150d9269fd5900ecc63aadfdd9ebe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_26274c667cae61f88dce946578f2b5a639574a20.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.3.1_7f5f7532cd9417eeee3c4995fbe2baa823bd020a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-10.0.1_7ca24ca51e5663866b1e635a99164f23baae76f0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\udemyreactnative\react-native-image-picker\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4bc7e4c88d8a58037f153bc224b47da51ae40f2f">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\udemyreactnative-react-native-image-picker-unspecified_0c91a6c2a80d3b20bf9ff25d42ab04e2c4ae8b54.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.balysv.materialmenu\material-menu\1.5.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1f6ff1728c297524e82b875ce2dfda946f4bca41">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.balysv.materialmenu-material-menu-1.5.4_5a74a989c48b705f0aa2be82b817cbc24a5ab99b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.3.1_a6bace4a9214e2db09416fa198c0b2277b94c9fe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.13.0\a9283170b7305c8d92d25aff02a6ab7e45d06cbe\okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\okio-1.13.0_0f0a47cda243d58cbca5de73a45be4fe5587d734.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\javax.inject-1_bead7b010f45d25b662009553667252466c53f99.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10a532948\jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\jsr305-3.0.0_7b3eaaf0d4bd7a7f6da7fd7237bafc3b0ee6c4a6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.52.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="af61eb11ffb4296cab0c93218248a3dfcec0a84c">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.react-react-native-0.52.0_49bbada61a675226ec43192acc4c4dd5d454867c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.3.1_1f016b830ed46a23b4fb3335e1e281014f476816.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.3.1_cd677bd9831e5b8bc8b798e65391bbb1945a26ea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.android.support\transition\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-transition-25.3.1_13cfc5d72fac5549a180bde7981301c389341556.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-drawee-1.3.0_b21699737faf54540cb4c63ee602df5e9a95740d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="C:\Users\Facundo\Desktop\Workspace\udemy-react-native\android\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.3.1_37dedb21551801a85b8069f3b20db7d5f1bbf2a7.jar" />
+    </item>
+
+</items>

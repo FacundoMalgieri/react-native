@@ -3,7 +3,7 @@ import {Button, StyleSheet, Text, View, Dimensions} from 'react-native';
 import MapView from 'react-native-maps';
 
 class PickLocation extends Component {
-    componentWillMount (){
+    componentWillMount() {
         this.reset();
     };
 
@@ -63,7 +63,7 @@ class PickLocation extends Component {
     render() {
         let marker = null;
         if (this.state.locationChosen) {
-            marker = <MapView.Marker coordinate={this.state.focusedLocation}/>
+            marker = <MapView.Marker coordinate={this.state.focusedLocation}/>;
         }
 
         return (
