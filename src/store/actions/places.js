@@ -1,13 +1,24 @@
-import {REMOVE_PLACE, SET_PLACES} from './actionTypes';
-import {uiStartLoading, uiStopLoading} from './ui';
+import {PLACE_ADDED, REMOVE_PLACE, SET_PLACES, START_ADD_PLACE} from './actionTypes';
+import {uiStartLoading, uiStopLoading, authGetToken} from './index';
 
 export const addPlace = (placeName, location, image) => {
     return dispatch => {
+        let authToken;
         dispatch(uiStartLoading());
-        fetch('https://us-central1-udemy-react-nati-1521638812816.cloudfunctions.net/storeImage', {
-            method: 'POST',
-            body: JSON.stringify({image: image.base64})
-        })
+        dispatch(authGetToken())
+            .catch(() => {
+                alert('No valid token found.');
+            })
+            .then(token => {
+                authToken = token;
+                return fetch('https://us-central1-udemy-react-nati-1521638812816.cloudfunctions.net/storeImage', {
+                    method: 'POST',
+                    body: JSON.stringify({image: image.base64}),
+                    headers: {
+                        'Authorization': 'Bearer ' + authToken
+                    }
+                })
+            })
             .catch(err => {
                 console.log(err);
                 alert('Something went wrong, please try again.');
@@ -20,22 +31,35 @@ export const addPlace = (placeName, location, image) => {
                     location: location,
                     image: parsedRes.imageUrl
                 };
-                return fetch('https://udemy-react-nati-1521638812816.firebaseio.com/places.json', {
+                return fetch('https://udemy-react-nati-1521638812816.firebaseio.com/places.json?auth=' + authToken, {
                     method: 'POST',
                     body: JSON.stringify(placeData)
                 })
-            })
-            .catch(err => {
-                alert('Something went wrong, please try again.');
-                console.log(err);
-                dispatch(uiStopLoading());
             })
             .then(res => res.json())
             .then(parsedRes => {
                 console.log(parsedRes);
                 dispatch(uiStopLoading());
+                dispatch(placeAdded());
+            })
+            .catch(err => {
+                alert('Something went wrong, please try again.');
+                console.log(err);
+                dispatch(uiStopLoading());
             });
     };
+};
+
+export const placeAdded = () => {
+    return {
+        type: PLACE_ADDED
+    }
+};
+
+export const startAddPlace = () => {
+    return {
+        type: START_ADD_PLACE
+    }
 };
 
 export const removePlace = key => {
@@ -47,17 +71,23 @@ export const removePlace = key => {
 
 export const deletePlace = key => {
     return dispatch => {
-        dispatch(removePlace(key));
-        return fetch('https://udemy-react-nati-1521638812816.firebaseio.com/places/' + key + '.json', {
-            method: 'DELETE',
-        })
-            .catch(err => {
-                alert('Something went wrong, please try again.');
-                console.log(err);
+        dispatch(authGetToken())
+            .catch(() => {
+                alert('No valid token found.');
+            })
+            .then(token => {
+                dispatch(removePlace(key));
+                return fetch('https://udemy-react-nati-1521638812816.firebaseio.com/places/' + key + '.json?auth=' + token, {
+                    method: 'DELETE',
+                })
             })
             .then(res => res.json())
             .then(parsedRes => {
                 console.log('Done!')
+            })
+            .catch(err => {
+                alert('Something went wrong, please try again.');
+                console.log(err);
             });
     }
 };
@@ -65,10 +95,12 @@ export const deletePlace = key => {
 
 export const getPlaces = () => {
     return dispatch => {
-        return fetch('https://udemy-react-nati-1521638812816.firebaseio.com/places.json')
-            .catch(err => {
-                alert('Something went wrong, please try again.');
-                console.log(err);
+        dispatch(authGetToken())
+            .catch(() => {
+                alert('No valid token found.');
+            })
+            .then(token => {
+                return fetch('https://udemy-react-nati-1521638812816.firebaseio.com/places.json?auth=' + token);
             })
             .then(res => res.json())
             .then(parsedRes => {
@@ -84,6 +116,10 @@ export const getPlaces = () => {
                 }
                 dispatch(setPlaces(places))
             })
+            .catch(err => {
+                alert('Something went wrong, please try again.');
+                console.log(err);
+            });
     };
 };
 
