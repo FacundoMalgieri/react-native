@@ -27,6 +27,11 @@ class FindPlaceScreen extends Component {
     }
 
     onNavigatorEvent = event => {
+        if (event.type === "ScreenChangedEvent") {
+            if (event.id === "willAppear") {
+                this.props.onLoadPlaces();
+            }
+        }
         if (event.type === 'NavBarButtonPress') {
             if (event.id === 'sideDrawerToggle') {
                 this.props.navigator.toggleDrawer({side: 'left'});
@@ -131,6 +136,5 @@ const mapDispatchToProps = dispatch => {
         onLoadPlaces: () => dispatch(getPlaces())
     }
 };
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(FindPlaceScreen);
