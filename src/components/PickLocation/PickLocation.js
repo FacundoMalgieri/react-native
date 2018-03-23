@@ -3,14 +3,20 @@ import {Button, StyleSheet, Text, View, Dimensions} from 'react-native';
 import MapView from 'react-native-maps';
 
 class PickLocation extends Component {
-    state = {
-        focusedLocation: {
-            latitude: -34.601546,
-            longitude: -58.401883,
-            latitudeDelta: 0.0060,
-            longitudeDelta: Dimensions.get('window').width / Dimensions.get('window').height * 0.0100
-        },
-        locationChosen: false
+    componentWillMount (){
+        this.reset();
+    };
+
+    reset = () => {
+        this.setState({
+            focusedLocation: {
+                latitude: -34.601546,
+                longitude: -58.401883,
+                latitudeDelta: 0.0060,
+                longitudeDelta: Dimensions.get('window').width / Dimensions.get('window').height * 0.0100
+            },
+            locationChosen: false
+        });
     };
 
     pickLocationHandler = event => {
@@ -67,6 +73,7 @@ class PickLocation extends Component {
                     style={styles.map}
                     onPress={this.pickLocationHandler}
                     ref={ref => this.map = ref}>
+                    {marker}
                 </MapView>
                 <View style={styles.button}>
                     <Button title='Locate Me' onPress={this.getLocationHandler}/>
