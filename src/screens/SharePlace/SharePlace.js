@@ -44,17 +44,22 @@ class SharePlaceScreen extends Component {
     componentDidUpdate() {
         if (this.props.placeAdded) {
             this.props.navigator.switchToTab({tabIndex: 0});
-            this.props.onStartAddPlace();
         }
     };
 
 
     onNavigatorEvent = event => {
+        if (event.type === 'ScreenChangedEvent') {
+            if (event.id === 'willAppear') {
+                this.props.onStartAddPlace();
+            }
+        }
         if (event.type === 'NavBarButtonPress') {
-            if (event.id === 'sideDrawerToggle')
+            if (event.id === 'sideDrawerToggle') {
                 this.props.navigator.toggleDrawer({
                     side: 'left'
                 });
+            }
         }
     };
 
@@ -185,7 +190,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         onAddPlace: (placeName, location, image) => dispatch(addPlace(placeName, location, image)),
-        onStartAddPlace: ()=> dispatch(startAddPlace())
+        onStartAddPlace: () => dispatch(startAddPlace())
     }
 };
 
