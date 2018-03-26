@@ -24,13 +24,8 @@ export const tryAuth = (authData, authMode) => {
                 'Content-Type': 'application/json'
             }
         })
-            .catch(err => {
-                console.log(err);
-                alert('Authentication failed, please try again.');
-                dispatch(uiStopLoading());
-            })
             .then(res => {
-                if(res.ok) {
+                if (res.ok) {
                     return res.json();
                 } else {
                     throw (new Error());
@@ -44,7 +39,12 @@ export const tryAuth = (authData, authMode) => {
                     dispatch(authStoreToken(parsedRes.idToken, parsedRes.expiresIn, parsedRes.refreshToken));
                     startMainTabs();
                 }
-            });
+            })
+            .catch(err => {
+                console.log(err);
+                alert('Authentication failed, please try again.');
+                dispatch(uiStopLoading());
+            })
     };
 };
 

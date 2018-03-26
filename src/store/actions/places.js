@@ -35,8 +35,9 @@ export const addPlace = (placeName, location, image) => {
                 const placeData = {
                     name: placeName,
                     location: location,
-                    image: parsedRes.imageUrl
-                };
+                    image: parsedRes.imageUrl,
+                    imagePath: parsedRes.image
+               };
                 return fetch('https://udemy-react-nati-1521638812816.firebaseio.com/places.json?auth=' + authToken, {
                     method: 'POST',
                     body: JSON.stringify(placeData)

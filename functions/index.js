@@ -31,14 +31,15 @@ exports.storeImage = functions.https.onRequest((req, res) => {
                 }
             }
         }, (err, file) => {
-            if(!err) {
+            if (!err) {
                 res.status(201).json({
                     imageUrl: 'https://firebasestorage.googleapis.com/v0/b/' +
-                        bucket.name +
-                        '/o/' +
-                        encodeURIComponent(file.name) +
-                        '?alt=media&token=' +
-                        uuid
+                    bucket.name +
+                    '/o/' +
+                    encodeURIComponent(file.name) +
+                    '?alt=media&token=' +
+                    uuid,
+                    imagePath: '/places/' + uuid + '.jpg'
                 });
             } else {
                 console.log(err);
@@ -47,3 +48,13 @@ exports.storeImage = functions.https.onRequest((req, res) => {
         });
     });
 });
+
+exports.deleteImage = functions.database.ref('/places/{placeId}')
+    .onDelete(event => {
+        const placeData = event.data.previous.val();
+        const imagePath = placeData.imagePath;
+        const bucket = gcs.bucket('udemy-react-nati-1521638812816.appspot.com');
+        bucket.file(imagePath);
+        return bucket.file(imagePath).delete();
+
+    });
